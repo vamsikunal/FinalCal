@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  About Us
+{% endblock %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+<h1> {{ user.username }} </h1>
+<div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 50px 125px; padding: 0px 15px;">
+  <div class="col">
+    <div class="card">
+      <img src="{% static 'images/admin.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <center>
+          <h5 class="card-title">Kunal Mahajan</h5>
+          <p class="card-text">DSAI - 201020427</p>
+        </center>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="{% static 'images/admin.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <center>
+          <h5 class="card-title">Yash Ghodekar</h5>
+          <p class="card-text">CSE - 201000059</p>
+        </center>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="{% static 'images/admin.png' %}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <center>
+          <h5 class="card-title">Swarup Yeole</h5>
+          <p class="card-text">CSE - 201000054</p>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
